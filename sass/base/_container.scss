@@ -1,0 +1,80 @@
+/* CONTAINER */
+body.logged-in.admin-bar {
+    padding-top: 32px;
+  }
+  
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    position: relative;
+  }
+  
+  /* ULTRAWIDE */
+  @media (min-width: 2200px) {
+    .container {
+      width: 1200px !important;
+      max-width: 1200px !important;
+      margin-left: calc(calc(99.9vw - 1200px)/2) !important;
+      margin-right: calc(calc(99.9vw - 1200px)/2) !important;
+    }
+    .padding-right {
+      padding-right: calc(calc(99.9vw - 1200px)/2) !important;
+      /* width: calc(100% - 100px) !important; */
+    }
+    .padding-left {
+      padding-left: calc(calc(99.9vw - 1200px)/2) !important;
+      /* width: calc(100% - 100px) !important; */
+    }
+  }
+  
+  /* GRANDS ECRANS */
+  @media (max-width: 2199px) {
+    .container {
+      width: 1200px !important;
+      max-width: 1200px !important;
+      margin-left: calc(calc(99.9vw - 1200px)/2) !important;
+      margin-right: calc(calc(99.9vw - 1200px)/2) !important;
+    }
+    .padding-right {
+      padding-right: calc(calc(99.9vw - 1200px)/2) !important;
+      /* width: calc(100% - 100px) !important; */
+    }
+    .padding-left {
+      padding-left: calc(calc(99.9vw - 1200px)/2) !important;
+      /* width: calc(100% - 100px) !important; */
+    }
+  }
+  
+  /* MOYENS ECRANS */
+  @media (max-width: 1479px) {
+    .container {
+      width: calc(100% - 200px) !important;
+      margin-left: 100px !important;
+      margin-right: 100px !important;
+    }
+    .padding-right {
+      padding-right: 100px !important;
+      /* width: calc(100% - 100px) !important; */
+    }
+    .padding-left {
+      padding-left: 100px !important;
+      /* width: calc(100% - 100px) !important; */
+    }
+  }
+  
+  /* PETITS ECRANS */
+  @media (max-width: 992px) {
+    .container {
+      width: calc(100% - 40px) !important;
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    .padding-right {
+      padding-right: 20px !important;
+      width: 100% !important;
+    }
+    .padding-left {
+      padding-left: 20px !important;
+      width: 100% !important;
+    }
+  }
