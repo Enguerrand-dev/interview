@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="root-ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="root-ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="root-ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Salyrl - Des solutions solaires innovantes qui apportent à tous un accès fiable à l'énergie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +19,12 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="build/lib/locomotive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
-<body>
+<body data-scroll-container>
     <header class="padding-left fixed">
         <div class="header_container">
         <div class="header_logo">
@@ -54,44 +63,45 @@
         </div>
         <div class="small__divider"></div>
         <ul>
-            <li class="actif"> Solutions </li>
-            <li>À propos</li>
-            <li>Impact</li>
-            <li>Actualités</li>
-            <li>FAQ</li>
+            <!-- TODO: add link inside each li -->
+            <li class="menu__small__item actif"> Solutions </li>
+            <li class="menu__small__item">À propos</li>
+            <li class="menu__small__item">Impact</li>
+            <li class="menu__small__item">Actualités</li>
+            <li class="menu__small__item">FAQ</li>
         </ul>
-        <div class="cta header_cta">contact</div>
+        <div id="menu__cta" class="cta header_cta">contact</div>
     </div>
     </header>
    
     <main>
-        <div class="intro_image">
-            <img class="big" src="assets/images/salyrl-des-solutions-solaires-innovantes.png" alt="">
-            <img class="small" src="assets/images/small/salyrl-des-solutions-solaires-innovantes.png" alt="">
+        <div class="intro_image" data-scroll-section>
+            <img data-scroll class="big"  src="assets/images/salyrl-des-solutions-solaires-innovantes.png" alt="">
+            <img data-scroll class="small" src="assets/images/small/salyrl-des-solutions-solaires-innovantes.png" alt="">
         </div>
-        <div class="container">
+        <div class="container" >
             <div class="container_intro">
-                <div class="intro_content">
-                    <h1 class="heading__primary">Des solutions solaires innovantes qui apportent à tous un <span class="green__color">accès fiable à l'énergie</span></h1>
-                    <p class="p__primary">Aujourd'hui, plus de 590 millions de personnes en Afrique sub-saharienne n'ont pas accès à l'électricité. Nous avons donc développé des systèmes solaires connectés, abordables et durables pour les ménages, les entreprises et les lieux communautaires. </p>
-                    <a href="#"><div class="cta">Découvrez nos kits solaires</div></a>
+                <div class="intro_content" data-scroll-section>
+                    <h1 data-scroll class="heading__primary">Des solutions solaires innovantes qui apportent à tous un <span class="green__color">accès fiable à l'énergie</span></h1>
+                    <p data-scroll class="p__primary">Aujourd'hui, plus de 590 millions de personnes en Afrique sub-saharienne n'ont pas accès à l'électricité. Nous avons donc développé des systèmes solaires connectés, abordables et durables pour les ménages, les entreprises et les lieux communautaires. </p>
+                    <a data-scroll href="#"><div class="cta">Découvrez nos kits solaires</div></a>
                 </div>
             </div>
-            <div class="arrow">
-                <div class="arrow__container">
+            <div class="arrow" data-scroll-section>
+                <div class="arrow__container" data-scroll >
                     <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.370884 1.16684C0.936584 0.498611 1.94548 0.408326 2.62432 0.965187L8 5.37492L13.3757 0.965187C14.0545 0.408326 15.0634 0.498611 15.6291 1.16684C16.1948 1.83508 16.1031 2.82821 15.4243 3.38507L9.02429 8.63505C8.43094 9.12178 7.56906 9.12178 6.97571 8.63505L0.575742 3.38507C-0.103097 2.82821 -0.194815 1.83508 0.370884 1.16684Z" fill="#4FA67C"/>
                     </svg> 
                 </div>
             </div>
         </div>
-        <div class="padding-right">
-            <div class="about_content">
-                <div class="about__image">
+        <div id="about" class="padding-right">
+            <div class="about_content" data-scroll-section>
+                <div class="about__image"  data-scroll data-scroll-speed="1">
                     <img src="assets/images/solution-adaptee-a-vos-besoins.png" alt="Avancez dans la vie avec une solution adaptée à vos besoins">
                     <div class="about__image__decoration"></div>
                 </div>
-                <div class="about__content">
+                <div class="about__content"  data-scroll data-scroll-speed="-2" data-scroll-offset="100,300">
                     <div class="tag">
                         <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M59.3336 2.37126C59.5712 1.28653 60.6089 0.683311 61.6512 1.02393C62.6935 1.36456 63.3458 2.52003 63.1082 3.60476L60.3678 16.1138C60.1302 17.1985 59.0926 17.8018 58.0502 17.4611C57.0079 17.1205 56.3556 15.965 56.5932 14.8803L59.3336 2.37126ZM32.7046 0.106554C31.7121 0.446982 31.2312 1.60149 31.6304 2.68521L36.2914 15.337C36.6906 16.4207 37.8188 17.0233 38.8113 16.6828C39.8038 16.3424 40.2847 15.1879 39.8854 14.1042L35.2245 1.45241C34.8252 0.368683 33.697 -0.233875 32.7046 0.106554ZM10.9731 17.4427C10.0874 16.7334 9.85552 15.4387 10.455 14.5509C11.0546 13.663 12.2585 13.5183 13.1441 14.2275L23.6571 22.6469C24.5427 23.3562 24.7747 24.6509 24.1751 25.5387C23.5756 26.4266 22.3717 26.5713 21.486 25.8621L10.9731 17.4427ZM15.4024 41.309C16.469 41.4797 17.2718 42.5291 17.1956 43.6528C17.1195 44.7765 16.1931 45.5491 15.1265 45.3783L2.44988 43.349C1.38333 43.1782 0.580475 42.1288 0.656656 41.0051C0.732841 39.8814 1.65922 39.1089 2.72577 39.2796L15.4024 41.309Z" fill="#FBCC0B"/>
@@ -104,9 +114,9 @@
                 </div>
             </div>
         </div>
-        <div class="avantage_container">
-            <div class="container avantage__content">
-                <div>
+        <div class="avantage_container" data-scroll-section data-scroll-speed='-1' >
+            <div class="container avantage__content" data-scroll data-scroll-direction="horizontal">
+                <div >
                 <h2 class="heading__secondary__variant">Les avantages des <br><span class="yellow__color">solutions Solarly</span></h2>
                 <div class="slider_container">
                     <div class="slider__illustration">
@@ -141,7 +151,7 @@
 
 
             </div>
-            <div class="avantage__illustration">
+            <div class="avantage__illustration" >
                 <img class="big" src="assets/images/imgage-avantages.png" alt="">
                 <img class="small" src="assets/images/small/imgage-avantages.png" alt="">
             </div>
@@ -152,15 +162,15 @@
 
 
 
-    <div class="bottom_decoration">
-        <svg class="big" width="460" height="1273" viewBox="0 0 460 1273" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="bottom_decoration" data-scroll-section>
+        <svg data-scroll  class="big" width="460" height="1273" viewBox="0 0 460 1273" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.4">
             <ellipse cx="832" cy="832" rx="629.924" ry="626.347" fill="white" fill-opacity="0.15"/>
             <path d="M69.3212 832.146C69.3213 411.933 411.011 71.2804 832.508 71.2804C1254.01 71.2804 1595.7 411.933 1595.7 832.147C1595.7 1252.36 1254.01 1593.01 832.508 1593.01C411.011 1593.01 69.3212 1252.36 69.3212 832.146Z" stroke="white" stroke-width="0.7"/>
             <circle cx="832" cy="832" r="831.65" transform="rotate(-180 832 832)" stroke="#FBCC0B" stroke-width="0.7"/>
             </g>
         </svg>
-        <svg class="small" width="320" height="282" viewBox="0 0 320 282" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg data-scroll  class="small" width="320" height="282" viewBox="0 0 320 282" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.4">
             <ellipse cx="167.999" cy="386" rx="292.248" ry="290.589" transform="rotate(90 167.999 386)" fill="white" fill-opacity="0.15"/>
             <path d="M167.932 32.3488C362.783 32.3488 520.742 190.789 520.742 386.236C520.742 581.683 362.783 740.123 167.932 740.123C-26.9189 740.123 -184.879 581.683 -184.879 386.236C-184.879 190.789 -26.919 32.3488 167.932 32.3488Z" stroke="white" stroke-width="0.7"/>
@@ -171,7 +181,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/lib/locomotive.min.js"></script>
     <script src="js/custom/swiper.js"></script>
     <script src="js/custom/menu.js"></script>
+    <script src="js/custom/scroll.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

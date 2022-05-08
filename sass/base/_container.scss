@@ -18,7 +18,9 @@ body.logged-in.admin-bar {
       margin-right: calc(calc(99.9vw - 1200px)/2) !important;
     }
     .padding-right {
-      padding-right: calc(calc(99.9vw - 1200px)/2) !important;
+      padding-right: 0;
+      width:1200px;
+      margin: auto;
       /* width: calc(100% - 100px) !important; */
     }
     .padding-left {
@@ -36,7 +38,9 @@ body.logged-in.admin-bar {
       margin-right: calc(calc(99.9vw - 1200px)/2) !important;
     }
     .padding-right {
-      padding-right: calc(calc(99.9vw - 1200px)/2) !important;
+      width:1200px;
+      margin: auto;
+      //padding-right: calc(calc(99.9vw - 1200px)/2) !important;
       /* width: calc(100% - 100px) !important; */
     }
     .padding-left {
@@ -54,6 +58,7 @@ body.logged-in.admin-bar {
     }
     .padding-right {
       padding-right: 100px !important;
+      width: 100%;
       /* width: calc(100% - 100px) !important; */
     }
     .padding-left {

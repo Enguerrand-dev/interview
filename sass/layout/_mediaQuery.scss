@@ -7,6 +7,9 @@
     .header_menu_small{
         display: none;
     }
+    .menu__small{
+        display: none;
+    }
     .intro_image{
 
         .small{
@@ -133,6 +136,7 @@
         }
         .avantage__illustration{
             width: 100%;
+            margin-top: 60px;
             .big{
                 display: none;
             }
