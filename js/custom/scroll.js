@@ -3,7 +3,7 @@
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
     smartphone: {
-      smooth: false,
+      smooth: true,
     },
   });
 })();
