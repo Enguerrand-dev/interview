@@ -731,6 +731,13 @@ a {
   height: calc(100vh - 64px);
   touch-action: none; }
 
+@media (min-width: 1480px) {
+  .about_content .about__image img {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px; }
+  .about_content .about__image .about__image__decoration {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px; } }
 @media screen and (min-width: 767px) {
   .header_menu_small {
     display: none; }

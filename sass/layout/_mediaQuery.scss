@@ -1,6 +1,16 @@
-
-@media screen and (max-width: 992px) {
-    
+@media (min-width: 1480px){
+    .about_content {
+        .about__image{
+            img{
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+            .about__image__decoration{
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 767px){
