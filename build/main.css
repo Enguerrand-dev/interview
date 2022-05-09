@@ -605,7 +605,6 @@ a {
 }
 
 .about_content {
-  margin-top: 31px;
   display: flex;
   gap: 78px;
   justify-content: space-between;
