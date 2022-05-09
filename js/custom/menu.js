@@ -8,16 +8,13 @@ const menu_item = document.getElementsByClassName("menu__small__item");
 btn.onclick = () => {
   menu.classList.toggle("open");
   if (menu.classList.contains("open")) {
-    // change text btn
     btn.innerHTML = "Close";
-    // create new timeline
     const tl = gsap.timeline();
     tl.to(menu, { duration: 0.1, opacity: 1 });
     open(tl);
   } else {
     btn.innerHTML = "Menu";
     gsap.to(menu, { duration: 0.1, opacity: 0 });
-    close();
   }
 };
 
@@ -40,5 +37,3 @@ const open = (tl) => {
     { duration: 0.1, opacity: 1, y: 0 }
   );
 };
-
-const close = (tl) => {};
