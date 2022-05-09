@@ -5,6 +5,7 @@ const init = () => {
     lerp: 0.009,
     smartphone: {
       smooth: true,
+      lerp: 0.01,
     },
   });
 };
