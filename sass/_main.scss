@@ -92,9 +92,6 @@ main{
     position: relative;
     z-index: 100;
     .about__image{
-        //background-color: #ffffff;
-        //border-bottom-right-radius: 16px;
-        //border-top-right-radius: 16px;
 
         min-width: 512px;
         position: relative;
@@ -102,14 +99,14 @@ main{
 
         img{
             position: relative;
-            max-width: 90%;
+            width: 100%;
             border-top-right-radius: 16px;
             border-bottom-right-radius: 16px;
             z-index: 10;
         }
         .about__image__decoration{
             background-color: $color-white;
-            width: 100%;
+            width: calc(100% + 50px);
             height: 100%;
             border-top-right-radius: 16px;
             border-bottom-right-radius: 16px;
